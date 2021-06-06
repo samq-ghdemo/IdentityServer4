@@ -38,4 +38,10 @@ jobs:
         curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
         echo Unified Agent downloaded successfully
         chmod +x ./xModuleAnalyzer-NET.sh && ./xModuleAnalyzer-NET.sh
+    - name: 'Upload WhiteSource folder'
+      uses: actions/upload-artifact@v2
+      with:
+        name: Whitesource
+        path: whitesource
+        retention-days: 1
         
