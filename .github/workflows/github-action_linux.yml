@@ -16,8 +16,8 @@ jobs:
     - uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.402
-    - name: Build CSProj
-      run: dotnet run -p build/build.csproj
+    - name: Build DotNET projects
+      run: /build.sh
     - name: WhiteSource Unified Agent Scan
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
