@@ -33,6 +33,7 @@ jobs:
         WS_NUGET_RUNPRESTEP: true
         WS_FILESYSTEMSCAN: false
         WS_GENERATEPROJECTDETAILSJSON: true
+        WS_LOGFILESLEVEL: trace
         WS_EXCLUDES: '**/build/** **/tests/**'
       run: |
         curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
